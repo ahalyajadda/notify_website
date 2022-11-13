@@ -9,8 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import SigninPage from "./pages/SigninPage";
 
 function App() {
-    const token = localStorage.getItem("token");
-
+    
     return (
         <div className="App">
             <BrowserRouter>
