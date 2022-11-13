@@ -44,7 +44,7 @@ const Home = () => {
             </Link>
 
             {!noteList ||
-                (noteList.length == 0 && (
+                (noteList.length === 0 && (
                     <h2 className="nonotesfound">No Notes Found</h2>
                 ))}
             <div className="notelist">

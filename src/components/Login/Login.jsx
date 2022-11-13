@@ -9,30 +9,7 @@ const Signin = () => {
 
     const navigate = useNavigate();
 
-    const handleSignin = (e) => {
-        e.preventDefault();
-        const user = { username, password };
-
-        axios({
-            method: "POST",
-            url: `${process.env.REACT_APP_NOTERAPP_BACKEND}/users/login`,
-            headers: {
-                "Content-Type": "application/json",
-            },
-            data: user,
-        })
-            .then((res) => {
-                console.log("User logged in");
-                const token = res.data.token;
-                localStorage.setItem("token", token);
-                navigate("/dashboard");
-            })
-            .catch((err) => {
-                alert("Authentication failed");
-                setUsername("");
-                setPassword("");
-            });
-    };
+  
 
     const handleRegister = (e) => {
         e.preventDefault();

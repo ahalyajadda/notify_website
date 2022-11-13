@@ -34,31 +34,6 @@ const Signin = () => {
             });
     };
 
-    const handleRegister = (e) => {
-        e.preventDefault();
-
-        const user = { username, password };
-
-        axios({
-            method: "POST",
-            url: `${process.env.REACT_APP_NOTERAPP_BACKEND}/users/`,
-            headers: {
-                "Content-Type": "application/json",
-            },
-            data: user,
-        })
-            .then((res) => {
-                console.log("New User created");
-                localStorage.setItem("token", res.data.token);
-                navigate("/dashboard");
-            })
-            .catch((err) => {
-                alert(err);
-                setUsername("");
-                setPassword("");
-            });
-    };
-
     return (
         <div className="Signin">
             <div className="left1">
