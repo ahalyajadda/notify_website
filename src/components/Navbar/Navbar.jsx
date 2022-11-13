@@ -13,7 +13,7 @@ const Navbar = () => {
         const token = localStorage.getItem("token");
 
         axios({
-            url: `${process.env.REACT_APP_NOTERAPP_BACKEND}/users/logout`,
+            url: "https://notify-notify.herokuapp.com/users/logout",
             method: "POST",
             headers: {
                 Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const Navbar = () => {
         const token = localStorage.getItem("token");
 
         axios({
-            url: `${process.env.REACT_APP_NOTERAPP_BACKEND}/users/delete`,
+            url: "https://notify-notify.herokuapp.com/users/delete",
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${token}`,

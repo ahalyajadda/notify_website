@@ -15,7 +15,7 @@ const Signin = () => {
 
         axios({
             method: "POST",
-            url: `${process.env.REACT_APP_NOTERAPP_BACKEND}/users/login`,
+            url: "https://notify-notify.herokuapp.com/users/login",
             headers: {
                 "Content-Type": "application/json",
             },
