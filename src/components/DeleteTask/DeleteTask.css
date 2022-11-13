@@ -1,0 +1,104 @@
+.DeleteTask {
+    /* background-color: rgb(228, 15, 26); */
+    width: 80%;
+    height: 70%;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgb(32, 32, 32);
+   
+}
+
+.DelQuestion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 70px;
+}
+
+.DelNoteContent {
+    /* display: flex; */
+    justify-content: center;
+    /* color: rgb(240, 238, 231); */
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+  word-wrap: break-word;
+  color: rgb(0, 0, 0);
+    font-weight: lighter;
+    /* border: 1px solid white; */
+    padding: 10px;
+    margin-bottom: 70px;
+    overflow-y: scroll;
+}
+
+.DeleteBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.DeleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 42px;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.NoDeleteButton {
+    background-color:#ff4584;
+    border: none;
+
+}
+
+
+.YesDeleteButton {
+    border:  1px solid #ff4584;
+    background-color: white;
+}
+
+@media screen and (max-width:768px){
+    .DeleteTask {
+        padding: 10px 20px;
+    }
+    .DelQuestion {
+     
+        margin-bottom: 20px;
+    }
+    .DeleteBtns {
+    
+        width: 250px;
+    }
+   
+    
+.DelNoteContent {
+    /* display: flex; */
+    justify-content: center;
+    /* color: rgb(240, 238, 231); */
+    font-size: 20px;
+    width: 70%;
+    height: 40%;
+  word-wrap: break-word;
+  color: rgb(0, 0, 0);
+    font-weight: lighter;
+    border: 1px solid #ff4584;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+}

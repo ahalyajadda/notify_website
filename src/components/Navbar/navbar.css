@@ -1,0 +1,99 @@
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    border-bottom:  2px  solid black;
+    margin-bottom: 20px;
+}
+
+.navrouters,.routes{
+    text-decoration: none;
+}
+.navtitle{
+    text-decoration: none;
+}
+.titletext{
+    cursor: pointer;
+    font-family: Lobster;
+    color:rgb(12, 12, 12);
+    font-size: 40px;
+    padding: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+.navbtns,.navbtns.activeS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.routes{
+    margin-top: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.createnote{
+    background-color:#f53677;
+    margin: auto;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.createnote:hover {
+    background: none;
+    border: 2px solid #f53677;
+    color:#d80e30 ;
+}
+.hamburger{
+    display: none;
+
+}
+@media screen and (max-width:768px) {
+    .navbar{
+        position: sticky;
+    }
+    .hamburger{
+        display: initial;
+        margin: 20px;
+    }
+    .navbtns{
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background:rgba(0,0,0,0.9);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
+    }
+    .navbtns.active{
+        left: 0%;
+
+    } 
+    .createnote{
+        margin: 10px auto;
+    }
+     .navrouters{
+        display: none;
+        text-decoration: none;
+    }
+
+  
+}
+

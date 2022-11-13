@@ -1,0 +1,131 @@
+
+.Signin{
+    position: relative;
+    width:90%;
+    height: 100vh;
+    margin: auto;
+    margin-top:40px;
+    /* margin-bottom: 40px; */
+   display: flex;
+   box-shadow: 1px 1px 20px rgb(32, 32, 32);
+}
+.Signin .left1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.Signin .left1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(225deg,#e91e63,#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.SigninForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.content{
+    width: 50%;
+}
+.content h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff4584;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.content h3{
+    margin-bottom: 20px;
+}
+.FormUsername{
+    margin-bottom: 20px;
+}
+.dat span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.dat input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background:transparent;
+    border-radius: 30px;
+}
+.Btns{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background:transparent;
+    border-radius: 30px;
+    background-color: #ff4584;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Btns:hover{
+    background: #f53677;
+}
+.FormBtns p{
+    margin-top: 20px;
+    color: #607d8b;
+}
+.FormBtns p a{
+    color: #ff4584;
+}
+
+@media screen and (max-width:768px) {
+    .Signin .left1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .SigninForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index:1;
+    }
+    .content{
+        width: 100%;
+        padding: 40px;
+        background-color: rgb(255 255 255 /0.9);
+        margin: 50px;
+    }
+}

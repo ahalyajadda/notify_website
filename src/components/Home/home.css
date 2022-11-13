@@ -1,0 +1,103 @@
+
+  .addbtn{
+    color: #d80e30;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+    position: fixed;
+    right: 35px;
+    bottom: 100px;
+  }
+  .addbtn:hover{
+    background:none;
+    color: rgb(206, 15, 47);
+    border: 3px solid white;
+    box-shadow: 1px 1px 20px rgb(32,32,32);
+  }
+  .main{
+    background: rgba(255, 255, 255, 0.993);
+   
+  }
+.home{
+  width:80%;
+  height: 75vh;
+  background-color:#ffffff;
+  margin: 0 auto;
+  border-radius: 2%;
+  overflow: auto;
+  box-shadow: 1px 1px 20px rgb(32,32,32);
+}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(191, 196, 190);
+}
+
+.homenotes{
+ color: black;
+ padding: 20px;
+ font-weight: lighter;
+ cursor: default;
+ /*   box-shadow: 1px 1px 20px rgb(32,32,32); */
+
+}
+.notelist{
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+h2{
+  color: black;
+  margin-left:20px ;
+}
+.note{
+  padding: 10px 0px;
+  padding-left: 40px;
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color:white;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.notecontent{
+  width: 80%;
+  word-wrap: break-word;
+  color: black;
+}
+.DelIcon {
+  color: rgb(0, 0, 0);
+  padding: 0;
+  margin-right: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.DelIcon:hover {
+  color: rgb(255, 0, 0);
+}
+
+.note:hover {
+  box-shadow: 1px 1px 20px rgb(32, 32, 32);
+}

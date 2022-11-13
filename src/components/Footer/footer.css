@@ -1,0 +1,48 @@
+.footer{
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 31, 31);
+    position: fixed; 
+    width: 100%;
+}
+ .footertitle,.route,.router{
+    background-color: rgb(36, 35, 35);
+    margin: 5px 5px;
+}
+.footertitle{
+    font-family: Lobster;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+.route{
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    color:white;
+    
+}
+.router{
+    margin-top: 16px;
+} 
+.route:hover {
+    text-decoration: underline;
+} 
+@media screen and (max-width:768px) {
+    .route{
+        font-size: 10px;
+        padding: 1px;
+    }
+    .footertitle{
+        font-size: 18px;
+        padding: 2px;
+    }
+    .router{
+        margin-top: 10px;
+    } 
+}
